@@ -208,12 +208,21 @@
                                 <state key="normal" title="Restart">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="close:" destination="lrP-fw-cPw" eventType="touchUpInside" id="VCq-qu-662"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="14Z-8d-Ahf"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="gmD-EK-2C4"/>
+                    <connections>
+                        <outlet property="lbAnswered" destination="E5H-D6-s1d" id="D2A-mG-qEE"/>
+                        <outlet property="lbCorrect" destination="1Ni-s3-cwU" id="jK4-ci-NDN"/>
+                        <outlet property="lbScore" destination="p4v-2u-ThJ" id="hX1-P4-cF8"/>
+                        <outlet property="lbWrong" destination="8FB-9B-kit" id="wT9-pj-Wgd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ug1-HS-zuh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
