@@ -45,10 +45,10 @@
             </objects>
             <point key="canvasLocation" x="132" y="115"/>
         </scene>
-        <!--View Controller-->
+        <!--Quiz View Controller-->
         <scene sceneID="tNQ-HL-iCN">
             <objects>
-                <viewController id="SdU-Eo-K5G" sceneMemberID="viewController">
+                <viewController id="SdU-Eo-K5G" customClass="QuizViewController" customModule="App_Quiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cYD-CW-dZ0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -82,6 +82,9 @@
                                         <state key="normal">
                                             <color key="titleColor" red="1" green="0.28235294119999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="selectAnswer:" destination="SdU-Eo-K5G" eventType="touchUpInside" id="3JD-il-0BU"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TfH-TL-i3E">
                                         <rect key="frame" x="0.0" y="82" width="414" height="44"/>
@@ -92,6 +95,9 @@
                                         <state key="normal">
                                             <color key="titleColor" red="1" green="0.28235294119999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="selectAnswer:" destination="SdU-Eo-K5G" eventType="touchUpInside" id="zGl-Ng-QnU"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="glQ-IX-uTy">
                                         <rect key="frame" x="0.0" y="127" width="414" height="43"/>
@@ -102,6 +108,9 @@
                                         <state key="normal">
                                             <color key="titleColor" red="1" green="0.28235294119999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="selectAnswer:" destination="SdU-Eo-K5G" eventType="touchUpInside" id="BfC-0Q-ebB"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4e4-Zh-kFb">
                                         <rect key="frame" x="0.0" y="37" width="414" height="44"/>
@@ -112,6 +121,9 @@
                                         <state key="normal">
                                             <color key="titleColor" red="1" green="0.28235294119999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="selectAnswer:" destination="SdU-Eo-K5G" eventType="touchUpInside" id="fPI-l6-23C"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
@@ -133,6 +145,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="qVv-gX-3Ri"/>
                     <connections>
+                        <outlet property="lbQuestion" destination="Bnv-Bg-ZBB" id="Pu5-jV-p6i"/>
+                        <outlet property="viTimer" destination="nb5-BX-cNR" id="1JO-SB-B2S"/>
+                        <outletCollection property="btAnswers" destination="6N7-cK-7Ym" collectionClass="NSMutableArray" id="M9o-sh-CTk"/>
+                        <outletCollection property="btAnswers" destination="4e4-Zh-kFb" collectionClass="NSMutableArray" id="i0o-U2-Jcb"/>
+                        <outletCollection property="btAnswers" destination="TfH-TL-i3E" collectionClass="NSMutableArray" id="5m8-cV-di9"/>
+                        <outletCollection property="btAnswers" destination="glQ-IX-uTy" collectionClass="NSMutableArray" id="DbI-DY-ojg"/>
                         <segue destination="lrP-fw-cPw" kind="show" id="nR8-bQ-g8n"/>
                     </connections>
                 </viewController>
@@ -140,10 +158,10 @@
             </objects>
             <point key="canvasLocation" x="1147.8260869565217" y="105.97826086956522"/>
         </scene>
-        <!--View Controller-->
+        <!--Result View Controller-->
         <scene sceneID="jGW-Lw-M6a">
             <objects>
-                <viewController id="lrP-fw-cPw" sceneMemberID="viewController">
+                <viewController id="lrP-fw-cPw" customClass="ResultViewController" customModule="App_Quiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fko-Vk-s6I">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
