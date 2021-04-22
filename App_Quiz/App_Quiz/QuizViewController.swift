@@ -31,9 +31,13 @@ class QuizViewController: UIViewController {
         getNewQuiz()
     }
     func showResults(){
-        
+        performSegue(withIdentifier: "resultSegue", sender: nil)
     }
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let resultViewController = segue.destination as! ResultViewController
+        resultViewController.totalAnswers = quizManager.totalAnswers
+        resultViewController.totalCorrectAnswers = quizManager.totalCorrectAnswers
+    }
     func getNewQuiz(){
         quizManager.refreshQuiz()
         lbQuestion.text = quizManager.question

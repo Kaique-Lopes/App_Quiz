@@ -151,7 +151,7 @@
                         <outletCollection property="btAnswers" destination="4e4-Zh-kFb" collectionClass="NSMutableArray" id="i0o-U2-Jcb"/>
                         <outletCollection property="btAnswers" destination="TfH-TL-i3E" collectionClass="NSMutableArray" id="5m8-cV-di9"/>
                         <outletCollection property="btAnswers" destination="glQ-IX-uTy" collectionClass="NSMutableArray" id="DbI-DY-ojg"/>
-                        <segue destination="lrP-fw-cPw" kind="show" id="nR8-bQ-g8n"/>
+                        <segue destination="lrP-fw-cPw" kind="show" identifier="resultSegue" id="nR8-bQ-g8n"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gjh-bj-WeG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
