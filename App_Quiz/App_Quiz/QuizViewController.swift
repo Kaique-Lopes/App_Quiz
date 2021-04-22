@@ -45,6 +45,9 @@ class QuizViewController: UIViewController {
     }
 
     @IBAction func selectAnswer(_ sender: UIButton) {
+        let index = btAnswers.index(of: sender)!
+        quizManager.validateAnswer(index: index)
+        getNewQuiz()
         
     }
     
