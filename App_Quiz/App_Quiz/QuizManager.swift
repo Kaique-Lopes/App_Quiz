@@ -65,5 +65,10 @@ class QuizManager {
     var totalCorrectAnswers: Int {
         return _totalCorrect
     }
+    func refreshQuiz() {
+        let randomIndex = Int(arc4random_uniform(UInt32(quizes.count)))
+        let quizData = quizes[randomIndex]
+        quiz = Quiz(question: quizData.question, options: quizData.options, correctedAnswer: quizData.correctAnswer)
+    }
     
 }
