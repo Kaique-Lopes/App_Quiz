@@ -16,6 +16,7 @@
 		1E2351DF2630F1270059A95B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E2351DD2630F1270059A95B /* LaunchScreen.storyboard */; };
 		1E2351E82631044F0059A95B /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2351E72631044F0059A95B /* QuizViewController.swift */; };
 		1E2351EB263104680059A95B /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2351EA263104680059A95B /* ResultViewController.swift */; };
+		1E2351EE2631066A0059A95B /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2351ED2631066A0059A95B /* Quiz.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		1E2351E02630F1270059A95B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1E2351E72631044F0059A95B /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		1E2351EA263104680059A95B /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		1E2351ED2631066A0059A95B /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				1E2351D12630F1270059A95B /* SceneDelegate.swift */,
 				1E2351D32630F1270059A95B /* ViewController.swift */,
 				1E2351D52630F1270059A95B /* Main.storyboard */,
+				1E2351ED2631066A0059A95B /* Quiz.swift */,
 				1E2351E72631044F0059A95B /* QuizViewController.swift */,
 				1E2351EA263104680059A95B /* ResultViewController.swift */,
 				1E2351DB2630F1270059A95B /* Assets.xcassets */,
@@ -148,6 +151,7 @@
 			files = (
 				1E2351D42630F1270059A95B /* ViewController.swift in Sources */,
 				1E2351E82631044F0059A95B /* QuizViewController.swift in Sources */,
+				1E2351EE2631066A0059A95B /* Quiz.swift in Sources */,
 				1E2351D02630F1270059A95B /* AppDelegate.swift in Sources */,
 				1E2351DA2630F1270059A95B /* App_Quiz.xcdatamodeld in Sources */,
 				1E2351D22630F1270059A95B /* SceneDelegate.swift in Sources */,
