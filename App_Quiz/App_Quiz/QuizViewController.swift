@@ -21,8 +21,28 @@ class QuizViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
+        viTimer.frame.size.width = view.frame.size.width
+        UIView.animate(withDuration: 60.0, delay: 0, options: .curveLinear) {
+            self.viTimer.frame.size.width = 0
+        } completion: { (success) in
+            self.showResults()
+        }
+        getNewQuiz()
+    }
+    func showResults(){
+        
     }
     
+    func getNewQuiz(){
+        quizManager.refreshQuiz()
+        lbQuestion.text = quizManager.question
+        for i in 0..<quizManager.options.count{
+            let option = quizManager.options[i]
+            let button = btAnswers[i]
+            button.setTitle(option, for: .normal)
+        }
+    }
 
     @IBAction func selectAnswer(_ sender: UIButton) {
         
